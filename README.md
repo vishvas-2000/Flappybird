@@ -7,4 +7,4 @@ i first created the the game. then made and environment from it . for creating e
 After this i created DQNAgent class for the agents. And finally call all the above functions to training the agents. I got suffiently good results after 150 episodes 
 give or take. but it was unbeatable after 189 episodes of game. 
 
-nice game.
+very nice game.
