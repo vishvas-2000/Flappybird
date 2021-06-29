@@ -76,6 +76,7 @@ class pipe():
         self.width = 52
         self.max = 8
         self.list = []
+        self.create_list()
         
     def create_list(self):
         position  = random.choice(self.height_list)
@@ -83,7 +84,7 @@ class pipe():
         top_pipe = [350, position-self.height-160, 350 + self.width, position-160]
         self.list.extend([bottom_pipe, top_pipe])
         for pipe in self.list:
-            if pipe[0]<= 50:
+            if pipe[0]<= 0:
                 self.list.pop(0)
                 self.list.pop(0)
                 break
