@@ -1,6 +1,9 @@
 import pygame
+from FlappyBird import *
 import numpy as np 
 import random
+screen_width = 288
+screen_height = 512
 
 class FlappyBird2D():
     def __init__(self):
