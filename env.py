@@ -86,3 +86,4 @@ class FlappyBird2D():
         text = self.font.render('Score : ' + str(self.bird.score), 1 ,(255, 0, 0) )
         text_rect = text.get_rect(center = (144, 40))
         self.screen.blit(text, text_rect)
+        pygame.display.update()
