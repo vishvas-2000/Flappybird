@@ -1,3 +1,12 @@
+import tensorflow as tf
+import matplotlib.pyplot as plot
+from CustomEnv import CustomEnv
+import numpy as np 
+from DQNAgent import DQNAgent
+env = CustomEnv()
+agent = DQNAgent(env, discount= 0.99, learning_rate= 0.001, exploration_decay= 0.995, batch_size= 64, memory_capacity= 10_000)
+
+
 num_episodes = 100
 target_net_update_iter = 5
 beta = 0.95
@@ -11,9 +20,8 @@ ax = fig.add_subplot(111)
 ax.set_xlabel("Episodes")
 ax.set_ylabel("Rewards")
 fig.show()
-show_in_every = 1
 for episode in range(num_episodes):
-    state =env.reset()
+    state = env.reset()
     state = np.array(state)/ 50
     
     terminated = False
@@ -21,10 +29,7 @@ for episode in range(num_episodes):
     agent.epsilon = agent.get_exploration_rate(episode)
     time = 0
     while not terminated:
-#         env.render()
-        if episode % show_in_every == 0:
-            env.render()
-        
+        env.render()        
         action = agent.act(state)
         next_state, reward, terminated, info = agent.env.step(action)
         next_state = tf.convert_to_tensor(np.array(next_state)/50)
