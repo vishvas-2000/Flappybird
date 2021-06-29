@@ -1,4 +1,4 @@
-import gym 
+from customEnv import CustomEnv
 import matplotlib.pyplot as plot
 import numpy as np 
 import random 
@@ -6,9 +6,6 @@ from collections import deque
 import tensorflow as tf
 from tensorflow.keras import layers 
 from tensorflow.keras.optimizers import Adam
-%matplotlib notebook
-from IPython import display
-plot.rcParams["animation.html"]= 'jshtml' 
 
 env = CustomEnv()
 
