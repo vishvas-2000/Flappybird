@@ -1,8 +1,5 @@
 A replica of the flappy bird we've all played in our childhood. 
 
-I downloaded the png images of pipes and bird and background for flappybird from  https://github.com/clear-code-projects/FlappyBird_Python/tree/master/assets.
+Firstly I replicated the the game in python using PyGame. Then created a custom environment to run it in a simulation . For creating environment I took refrence from this video https://www.youtube.com/watch?v=ZxXKISVkH6Y. I downloaded the images and sounds required for flappybird from  https://github.com/clear-code-projects/FlappyBird_Python/tree/master/assets.
 
-i first created the the game. then made and environment from it . for creating environment i took refrence from this video https://www.youtube.com/watch?v=ZxXKISVkH6Y.
-
-After this i created DQNAgent class for the agents. And finally call all the above functions to training the agents. I got suffiently good results after 150 episodes 
-give or take. but it was unbeatable after 189 episodes of game. 
+Then for the training part I've used machine learning to be more precise reinforcement learning. I created DQNAgent class for the agents. And finally call all the above functions to training the agents. I got suffiently good results after approx 150 episodes, but it was unbeatable after appox. 200 episodes of game. 
