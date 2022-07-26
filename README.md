@@ -1,4 +1,4 @@
-I am new to Github  so i actually dont what to write here. But i am providing the refrences and process i used in this project.
+A replica of the flappy bird we've all played in our childhood. 
 
 I downloaded the png images of pipes and bird and background for flappybird from  https://github.com/clear-code-projects/FlappyBird_Python/tree/master/assets.
 
